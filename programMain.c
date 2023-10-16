@@ -17,8 +17,6 @@ int main() {
     char currentPlayer = 'X';
     //    Display welcome message
     printf("Welcome to Tic Tac Toe. The player who wishes to be X's will begin.\n");
-    // To keep track of the number of moves made (for checking draw
-    int movesMade = 0;
     //    While game is not over:
     while (true) {
         display_grid(board);
@@ -51,6 +49,8 @@ int main() {
         } else {
             printf("Invalid move. Please try again.\n");
         }
-
     }
+    printf("Who wins?!");
+    return 0;
+
 }

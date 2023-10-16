@@ -13,5 +13,11 @@ In this repo we have the following files:
 This file format allows us to effectively have two main programs, one for testing and one for running our game.
 
 Here we have the output of our 3 test suites and their subsequent tests:
-![img.png](img.png)
+![img.png](img/img.png)
+
+Output of debugging if there's a win:
+
+![img_1.png](img/img_1.png)
+
+n.b. The movesMade is only tracked if there's a draw.
 

@@ -8,7 +8,7 @@
 #include <stdbool.h>
 
 void display_grid(char board[3][3]);
-bool checkWin(char board[3][3], bool win);
+bool checkWin(char board[3][3], char currentPlayer);
 bool isValidMove(char board[3][3], int row, int col);
 bool isDraw(char board[3][3]);
 

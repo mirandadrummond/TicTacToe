@@ -1,2 +1,2 @@
 # TicTacToe
-A simple comand line TicTacToe game using the C programming language.
+A simple command line TicTacToe game using the C programming language.

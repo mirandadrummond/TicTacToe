@@ -9,8 +9,7 @@
 
 void display_grid(char board[3][3]);
 bool checkWin(char board[3][3], bool win);
-void isValidMove();
-void isDraw();
-int add(int a, int b);
+bool isValidMove(char board[3][3], int row, int col);
+bool isDraw(char board[3][3]);
 
 #endif //TICTACTOE_TICTACTOE_H

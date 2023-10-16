@@ -42,6 +42,9 @@ int main() {
                 printf("The game is a draw.\n");
                 break;
             }
+            // Adding in export to .txt to save state of the current game.
+            saveGameState(board, "TicTacToe/gamestate.txt");
+
 
             // Switch to the other player
             currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';

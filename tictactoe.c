@@ -86,3 +86,21 @@ bool checkWin(char board[3][3], char currentPlayer) {
 
     return false;  // No winning combination found
 }
+
+void saveGameState(char board[3][3], const char* filename) {
+    FILE* file = fopen(filename, "w");
+    if (file == NULL) {
+        printf("Error opening file for saving game state.\n");
+        return;
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            fprintf(file, "%c ", board[i][j]);
+        }
+        fprintf(file, "\n");
+    }
+
+    fclose(file);
+    printf("Game state saved to %s\n", filename);
+}

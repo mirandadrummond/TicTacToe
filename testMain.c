@@ -2,7 +2,6 @@
 // Created by Miranda Drummond on 11/10/2023.
 //
 
-#include <stdio.h>
 #include <CUnit/Basic.h>
 #include "tictactoe.h"
 

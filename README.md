@@ -11,3 +11,7 @@ In this repo we have the following files:
 `testMain.c` - This file takes the functions from `tictactoe.c` and runs unit tests on them using the CUnit library.
 
 This file format allows us to effectively have two main programs, one for testing and one for running our game.
+
+Here we have the output of our 3 test suites and their subsequent tests:
+![img.png](img.png)
+

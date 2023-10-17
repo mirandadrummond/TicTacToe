@@ -66,6 +66,29 @@ void test_isDraw() {
     CU_ASSERT_FALSE(isDraw(board2));  // Game is still ongoing
 }
 
+void test_saveGameState() {
+    char board[3][3] = {
+            {'X', 'O', 'X'},
+            {'O', 'X', 'O'},
+            {'O', 'X', 'X'}
+    };
+
+    // 1. Test saving to a valid filename
+    const char* validFileName = "test_save_valid.txt";
+    saveGameState(board, validFileName);
+
+    // Read the file and check its content
+    FILE* file = fopen(validFileName, "r");
+    char readBoard[3][3];
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            fscanf(file, "%c ", &readBoard[i][j]);
+        }
+    }
+    fclose(file);
+    CU_ASSERT_EQUAL(memcmp(board, readBoard, sizeof(board)), 0); // Check if the saved board matches the original
+}
+
 int main() {
     // Initialise the CUnit test registry
     CU_initialize_registry();
@@ -77,6 +100,7 @@ int main() {
     CU_add_test(suite, "test_checkWin", test_checkWin);
     CU_add_test(suite, "test_isValidMove", test_isValidMove);
     CU_add_test(suite, "test_isDraw", test_isDraw);
+    CU_add_test(suite, "test_saveGameState", test_saveGameState);
 
     // Run the tests
     CU_basic_run_tests();

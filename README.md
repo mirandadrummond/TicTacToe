@@ -6,10 +6,10 @@ This code is designed to work in CLion, if you copy and paste the files and comp
 
 In this repo we have the following files:
 
-`tictactoe.c` - Contains all the functions which run the tic tac toe game.
-`tictactoe.h` - The header file which exports the functions from the `.c` file so they can be used in our other files.
-`programMain.c` - The file we run when we want to just run the program. This takes the functions from `tictactoe.c` and then uses them in its main function.
-`testMain.c` - This file takes the functions from `tictactoe.c` and runs unit tests on them using the CUnit library.
+* `tictactoe.c` - Contains all the functions which run the tic tac toe game.
+* `tictactoe.h` - The header file which exports the functions from the `.c` file so they can be used in our other files.
+* `programMain.c` - The file we run when we want to just run the program. This takes the functions from `tictactoe.c` and then uses them in its main function.
+* `testMain.c` - This file takes the functions from `tictactoe.c` and runs unit tests on them using the CUnit library.
 
 This file format allows us to effectively have two main programs, one for testing and one for running our game.
 

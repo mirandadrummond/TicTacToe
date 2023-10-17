@@ -73,7 +73,7 @@ int main() {
     // Add a suite to the registry
     CU_pSuite suite = CU_add_suite("Suite Name", init_suite, clean_suite);
 
-    // Add the test cases to the suite
+    // Add the cases to the suite
     CU_add_test(suite, "test_checkWin", test_checkWin);
     CU_add_test(suite, "test_isValidMove", test_isValidMove);
     CU_add_test(suite, "test_isDraw", test_isDraw);

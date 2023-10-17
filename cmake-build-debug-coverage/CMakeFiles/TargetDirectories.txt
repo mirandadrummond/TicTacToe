@@ -1,0 +1,4 @@
+/Users/mirandadrummond/CLionProjects/TicTacToe/cmake-build-debug-coverage/CMakeFiles/runMain.dir
+/Users/mirandadrummond/CLionProjects/TicTacToe/cmake-build-debug-coverage/CMakeFiles/runTest.dir
+/Users/mirandadrummond/CLionProjects/TicTacToe/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/mirandadrummond/CLionProjects/TicTacToe/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

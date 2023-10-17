@@ -37,3 +37,7 @@ Then of course, when we terminate and re-run the debugger, it dissapears.
 ![img.png](img/img_3.png)
 
 A quick explanation, because I set my breakpoint right before I terminate the program, we can see what each row in the board is displaying, and the currentPlayer (which is the winner).
+
+Whereas when there is a draw, it recalls the last player who played, which in this case is X.
+
+![img.png](img/img_5.png)
